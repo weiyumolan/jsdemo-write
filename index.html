@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Hanzi Writer</title>
+
+<link rel="stylesheet" href="styles.css" />
+
+<script src="polyfill.min.js"></script>
+
+</head>
+<body>
+
+<h1 class="title">书写汉字</h1>
+
+<form class="js-char-form char-form">
+	<label>
+		字符
+		<input type="text" class="js-char char-input" size="1" maxlength="1" value="我" />
+	</label>
+	<button type="submit">发布</button>
+</form>
+<div class="actions">
+	<button class="js-toggle">展示/隐藏手写高亮文字</button>
+	<button class="js-toggle-hint">展示/隐藏灰暗文字阴影</button>
+	<button class="js-animate">文字自动手写动画展示</button>
+	<button class="js-quiz">自己手写方法</button>
+</div>
+
+<div id="target"></div>
+
+<script type="application/javascript" src="hanzi-writer.min.js"></script>
+<script type="application/javascript" src="test.js"></script>
+
+</body>
+</html>
